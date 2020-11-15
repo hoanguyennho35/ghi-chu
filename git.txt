@@ -5,11 +5,17 @@ modifide		nội dung có sự thay đổi so với lần commit cuối
 staged			nội dung đã được sẵn sàng chuẩn để commit lưu vào base dữ liệu
 branch			ở nhánh nào thu mục làm việc với tất cả các file trên nhánh đó
 
-
-**dòng lệnh
+**thao tác
 cd đường_dẫn		mở tập tin
 ls      xem các mục bên trong
 cat tên_file      xem nội dung trong file
+clear			xóa màn hình
+git config --global user.username
+git config --global user.email
+git config --global user.password
+git config --list
+
+**dòng lệnh
 git init		khởi tạo kho git để sử dụng các lệnh của git
 git status		kiểm tra trạng thái thư mục làm việc git
 git add .		đưa vào staged chuẩn bị commit
@@ -39,7 +45,7 @@ git merge --abort           trả các nhành về hiện trạng trước khi g
 git log --oneline --graph   vẽ sơ đồ phân nhánh
 git mergetool             sửa đổi sung đột nhánh khi gộp :diffg Re(Lo)giữ lại local hay remote-->ba cả 2
 pwd             hiện thư mục git
-
+   
 *********5
 git push --all             up tất cả nhánh từ local lên remote do git push -u đánh dấu mặc định tên remote
 git push tên_remote  tên_nhánh(--all)           up dữ liệu tên_nhánh từ local lên remote hay up tất cả nhánh
