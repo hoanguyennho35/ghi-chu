@@ -5,25 +5,32 @@ modifide		nội dung có sự thay đổi so với lần commit cuối
 staged			nội dung đã được sẵn sàng chuẩn để commit lưu vào base dữ liệu
 branch			ở nhánh nào thu mục làm việc với tất cả các file trên nhánh đó
 
-
-**dòng lệnh
+**thao tác
 cd đường_dẫn		mở tập tin
 ls      xem các mục bên trong
 cat tên_file      xem nội dung trong file
-git init		khởi tạo kho git để sử dụng các lệnh của git
-git status		kiểm tra trạng thái thư mục làm việc git
-git add .		đưa vào staged chuẩn bị commit
-git commit -m "ghi_chú"	dua vào commit
-git log 		kiểm tra chi tiết các commit
+clear			xóa màn hình
+git config --global user.username
+git config --global user.email
+git config --global user.password
+git config --list			kiểm tra danh sách
+git config --global --unset user.name   xóa bỏ username
+
+**dòng lệnh
+&git init		khởi tạo kho git để sử dụng các lệnh của git
+&git status		kiểm tra trạng thái thư mục làm việc git
+&git add .		đưa vào staged chuẩn bị commit
+&git commit -m "ghi_chú"	dua vào commit
+&git log 		kiểm tra chi tiết các commit
 git diff   nếu staged k có dữ liệu so sánh thư mục làm việc và commit cuối
 		nếu staged có dữ liệu so sánh thư mục làm việc và staged
 git diff --staged  so sánh giữa staged và commit cuối "dài quá nhấn q để thoát"
-git log --oneline  hiện các commit vắn tắt
+&git log --oneline  hiện các commit vắn tắt
 git checkout mã --tên   khôi phục file tên về mã đưa vào staged
 tạo thêm file .gitignore để loại trừ k theo dõi (*.img   cached)
 git restore (name or .)	phục hồi các file bị xóa từ commit cuối
 git restore --staged tên    loại bỏ file tên ra staged
-git commit --amend -m ten    update lai commit cuoi
+$git commit --amend -m ten    update lai commit cuoi
 git reset --hard HEAD~1   xóa commit cuối cùng nội dung trả về cho commit trước k lưu dữ liệu
 git reset --soft HEAD~1  xóa commit cuối nhưng nội dung trong commit cuối đưa vào staged có lưu dữ liệu
 git restore . khôi phục các file về trạng thái như ở commit cuối cùng
@@ -39,7 +46,7 @@ git merge --abort           trả các nhành về hiện trạng trước khi g
 git log --oneline --graph   vẽ sơ đồ phân nhánh
 git mergetool             sửa đổi sung đột nhánh khi gộp :diffg Re(Lo)giữ lại local hay remote-->ba cả 2
 pwd             hiện thư mục git
-
+   
 *********5
 git push --all             up tất cả nhánh từ local lên remote do git push -u đánh dấu mặc định tên remote
 git push tên_remote  tên_nhánh(--all)           up dữ liệu tên_nhánh từ local lên remote hay up tất cả nhánh
