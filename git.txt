@@ -1,0 +1,55 @@
+**chú thích
+untracked		git chua theo dõi
+unmodified		không có bất kỳ sự thay đổi nào so với lần commit cuối
+modifide		nội dung có sự thay đổi so với lần commit cuối
+staged			nội dung đã được sẵn sàng chuẩn để commit lưu vào base dữ liệu
+branch			ở nhánh nào thu mục làm việc với tất cả các file trên nhánh đó
+
+
+**dòng lệnh
+cd đường_dẫn		mở tập tin
+ls      xem các mục bên trong
+cat tên_file      xem nội dung trong file
+git init		khởi tạo kho git để sử dụng các lệnh của git
+git status		kiểm tra trạng thái thư mục làm việc git
+git add .		đưa vào staged chuẩn bị commit
+git commit -m "ghi_chú"	dua vào commit
+git log 		kiểm tra chi tiết các commit
+git diff   nếu staged k có dữ liệu so sánh thư mục làm việc và commit cuối
+		nếu staged có dữ liệu so sánh thư mục làm việc và staged
+git diff --staged  so sánh giữa staged và commit cuối "dài quá nhấn q để thoát"
+git log --oneline  hiện các commit vắn tắt
+git checkout mã --tên   khôi phục file tên về mã đưa vào staged
+tạo thêm file .gitignore để loại trừ k theo dõi (*.img   cached)
+git restore (name or .)	phục hồi các file bị xóa từ commit cuối
+git restore --staged tên    loại bỏ file tên ra staged
+git commit --amend -m ten    update lai commit cuoi
+git reset --hard HEAD~1   xóa commit cuối cùng nội dung trả về cho commit trước k lưu dữ liệu
+git reset --soft HEAD~1  xóa commit cuối nhưng nội dung trong commit cuối đưa vào staged có lưu dữ liệu
+git restore . khôi phục các file về trạng thái như ở commit cuối cùng
+
+*****4
+git branch   kiểm tra xem có bao nhiêu nhánh branch
+git branch tên_nhánh       tạo nhánh mới
+git checkout tên_nhánh      chuyển sang nhánh tên_nhánh
+git switch tên_nhánh        ""
+git merge tên_nhánh         gộp nhánh hiện tại với tên_nhánh (nhánh hiện tại là commit cuối để tránh xung đột)
+git branch -d tên_nhánh      xóa nhánh tên_nhánh
+git merge --abort           trả các nhành về hiện trạng trước khi gộp bị xung đột
+git log --oneline --graph   vẽ sơ đồ phân nhánh
+git mergetool             sửa đổi sung đột nhánh khi gộp :diffg Re(Lo)giữ lại local hay remote-->ba cả 2
+pwd             hiện thư mục git
+
+*********5
+git push --all             up tất cả nhánh từ local lên remote do git push -u đánh dấu mặc định tên remote
+git push tên_remote  tên_nhánh(--all)           up dữ liệu tên_nhánh từ local lên remote hay up tất cả nhánh
+git push -u    tên_remote   tên_nhánh           đánh dấu đường dẫn lần sau chỉ cần git push tự up lên
+git push --delete tên_remote  tên nhánh        xóa nhánh trên remote
+git clone            tải thư mục kho chứa trên remote
+git remote add tên(ký_hiệu) địa_chỉ_liên_kết        đặt tên đường dẫn cho local truy cập vào remote
+git remote rm tên        xóa remote tên đường dẫn
+git remote -v       kiểm tra địa chỉ của remote
+git fetch tên_remote        cập nhật mới thông tin trên remote
+git pull tên_remote tên_nhánh        cập nhật tên_nhánh từ remote về local
+
+
