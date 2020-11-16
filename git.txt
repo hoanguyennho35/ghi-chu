@@ -6,6 +6,7 @@ staged			nội dung đã được sẵn sàng chuẩn để commit lưu vào bas
 branch			ở nhánh nào thu mục làm việc với tất cả các file trên nhánh đó
 
 **thao tác
+yum install git -y	cài git
 cd đường_dẫn		mở tập tin
 ls      xem các mục bên trong
 cat tên_file      xem nội dung trong file
