@@ -27,6 +27,7 @@ git diff   nếu staged k có dữ liệu so sánh thư mục làm việc và co
 		nếu staged có dữ liệu so sánh thư mục làm việc và staged
 git diff --staged  so sánh giữa staged và commit cuối "dài quá nhấn q để thoát"
 &git log --oneline  hiện các commit vắn tắt
+git log --oneline origan/master 	kiểm tra commit trên origan nhánh master
 git checkout mã --tên   khôi phục file tên về mã đưa vào staged
 tạo thêm file .gitignore để loại trừ k theo dõi (*.img   cached)
 git restore (name or .)	phục hồi các file bị xóa từ commit cuối
@@ -42,13 +43,15 @@ git branch tên_nhánh       tạo nhánh mới
 git checkout tên_nhánh      chuyển sang nhánh tên_nhánh
 git switch tên_nhánh        ""
 git merge tên_nhánh         gộp nhánh hiện tại với tên_nhánh (nhánh hiện tại là commit cuối để tránh xung đột)
-git branch -d tên_nhánh      xóa nhánh tên_nhánh
+&git branch -d tên_nhánh      xóa nhánh tên_nhánh
 git merge --abort           trả các nhành về hiện trạng trước khi gộp bị xung đột
 git log --oneline --graph   vẽ sơ đồ phân nhánh
-git mergetool             sửa đổi sung đột nhánh khi gộp :diffg Re(Lo)giữ lại local hay remote-->ba cả 2
+git mergetool             sửa đổi sung đột nhánh khi gộp 
+				:diffg Re(Lo)giữ lại local hay remote-->ba cả 2
 pwd             hiện thư mục git
    
 *********5
+git push			vừa fetch vừa merge nhánh
 git push --all             up tất cả nhánh từ local lên remote do git push -u đánh dấu mặc định tên remote
 git push tên_remote  tên_nhánh(--all)           up dữ liệu tên_nhánh từ local lên remote hay up tất cả nhánh
 git push -u    tên_remote   tên_nhánh           đánh dấu đường dẫn lần sau chỉ cần git push tự up lên
