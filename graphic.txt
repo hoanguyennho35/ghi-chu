@@ -1,0 +1,18 @@
+_sleep với outtextxy sẽ k hiện chữ
+lòng 2 hàm for vào nhau hàm for 2 gán y++ khi hết vòng lặp 1 quay lại 1 nhảy vào sẽ thoát vòng 2 y lớn đk
+
+initwindow(m,n)		khởi tạo cửa sổ graphics
+closegraph()		đóng cửa sổ
+setcolor(int)		thiết lập màu vẽ 0 là màu nền
+outtextxy(x,y,"text")		thực hiện lệnh vẽ tại tọa độ x,y
+outtext("text')		vẽ chữ
+move(x,y)		di chuyển đến tọa độ
+setbkcolor(int)		thiết lập màu nền
+settextstyle(int,int,int)		thiết lập kiểu chữ
+line(x1,y1,x2,y2)			vẽ đường thẳng
+circle(x,y,r)				vẽ đường tròn
+getmaxcolor()				trả về giá trị màu cao nhất
+getcolor()				trả màu vẽ
+getbkcolor()				trả màu nền
+putpixel(x,y,color)				vẽ một pixel
+getpixel(x,y)				trả về màu vẽ tại pixel x,y

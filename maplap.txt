@@ -1,0 +1,39 @@
+clc 				xóa màn hình
+clear				xóa bộ nhớ
+4\5				chia ngược 5/4
+sind(45)			gốc theo độ
+exp(1)				hàm mũ e
+log()				hàm cơ số e
+log10()				cơ số 10
+%				chú thích
+a+b				không có dấu chấm ; dễ tính trung gian
+str2num				đổi ký tự sang số
+upper(x)			biến ký tự hoa
+lower(x)			biến ký tự thường
+[x y]				Nối ký tự x và y
+x(i)				truy cập đến từng phần tử thứ i
+input('..')			hiện thị nhập dữ liệu số
+disp(x1)			xuất dữ liệu ra màn hình
+x'				chuyển vị cột <=> hàng
+length(x)			độ dài của chuỗi or vecto
+linspace(min,max,số_phần_tử)	nhập số lượng phần tử 
+plot(x,y,'r',LineWidth',2)			vẽ đồ thị -- màu đỏ hình chữ nhật
+hold on				giữ đồ thị khi vẽ nhìu đồ thị
+xlabel('t')			ký hiệu trục hoành
+title('ten_do_thi')		tên đồ thị
+gird on				bật lưới
+ylim([2 3])			giới hạn y từ 2 -> 3
+legend('..','...')		chú thích đồ họa
+subplot(2,3,2)			chia đồ thị thành 2 hàng 3 cột lấy ô thứ 2
+line([1 2],[2 3])		vẽ đường thẳng
+text(0,0,0,'anhyeu')		vẽ chữ ở tọa độ x,y,z
+ones(4),zeros(4,5)		tạo ma trận đặc biệt
+eye(4)				ma trận đơn vị có các đường tréo bằng 1 còn lại =0
+rand(1,3)			ma trận ngẫu nhiên
+randi()				ma trận ngẫu nhiên số nguyên
+for i=1:n			vòng lặp for
+switch
+case...otherwise...end		vòn lặp switch
+funtion [y...]=tong(a1,a2)		tạo hàm
+....end
+
