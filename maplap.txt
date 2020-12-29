@@ -1,5 +1,6 @@
 clc 				xóa màn hình
 clear				xóa bộ nhớ
+clf				xóa đồ thị
 4\5				chia ngược 5/4
 sind(45)			gốc theo độ
 exp(1)				hàm mũ e
@@ -12,7 +13,7 @@ upper(x)			biến ký tự hoa
 lower(x)			biến ký tự thường
 [x y]				Nối ký tự x và y
 x(i)				truy cập đến từng phần tử thứ i
-input('..')			hiện thị nhập dữ liệu số
+a=input('..')			hiện thị nhập dữ liệu số
 disp(x1)			xuất dữ liệu ra màn hình
 x'				chuyển vị cột <=> hàng
 length(x)			độ dài của chuỗi or vecto
@@ -24,7 +25,12 @@ title('ten_do_thi')		tên đồ thị
 gird on				bật lưới
 ylim([2 3])			giới hạn y từ 2 -> 3
 legend('..','...')		chú thích đồ họa
+[x y]=max(matran)		trả về giá trị max của từng cột,và hàng thứ
 subplot(2,3,2)			chia đồ thị thành 2 hàng 3 cột lấy ô thứ 2
+size(tenmt,1)			lấy số hàng 1; cột 2
+det(a)				tính định thức
+rank()				hạng của ma trận biến đổi hàng về số 1 duy nhất rồi đếm số hàng đc 1
+a(2,:)				lấy hết hàng 2 : là tất cả
 line([1 2],[2 3])		vẽ đường thẳng
 text(0,0,0,'anhyeu')		vẽ chữ ở tọa độ x,y,z
 ones(4),zeros(4,5)		tạo ma trận đặc biệt
@@ -36,4 +42,26 @@ switch
 case...otherwise...end		vòn lặp switch
 funtion [y...]=tong(a1,a2)		tạo hàm
 ....end
+polyval(a,1)			tính giá trị đa thức tại 1
+roots(a)			tìm nghiệm của đa thức a trả về dạng cột
+poly(nghiệm,..)			tìm lại đa thức khi biết nghiệm
+conv(a,b)			tích của hai đa thức a*b
+polyder(a)			đạo hàm của đa thức a
+polyint(a,"hằng số c")		nguyên hàm của đa thức a
+syms x y			ký hiệu biến x,y
+subs(f,x,2)			tính giá trị đa thức f tại x=2
+limit(a,x,2)			tính giá trị khi x tiến về 2 của đa thức a
+exp(3)				e mũ 3
+1e+3				10^3 khác với 1*e+3
+inf				vô cùng
+
+***số phức
+real(z)				phần thực
+imag(z)				phần ảo
+abs				lấy trị tuyệt đối
+asin				arcsin lấy pi
+sin				lấy radian
+sind				lấy độ
+
+
 
