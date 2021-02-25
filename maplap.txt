@@ -54,6 +54,9 @@ limit(a,x,2)			tính giá trị khi x tiến về 2 của đa thức a
 exp(3)				e mũ 3
 1e+3				10^3 khác với 1*e+3
 inf				vô cùng
+size(a)				trả về kích thước hàng, cột
+max(a)				so sánh các cột lấy max trả về ma trận hàng
+
 
 ***số phức
 real(z)				phần thực

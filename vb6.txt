@@ -1,0 +1,9 @@
+if  dieu_kien     then
+     function
+else
+     function
+end if
+
+dim ten_bien as interger 			khai báo
+shape.fillColor= RGB(255,0,0)			đổi màu sắc
+a=4					có thể phép gán hoặc phép so sánh a có bằng 4

@@ -1,0 +1,3 @@
+footer tạo bằng cách đánh số trang clip vào thêm hiệu ứng sẽ nhân bản cho các trang phía sau
+xóa ngắt trang vào view->draft 	chọn dòng ngắt dectecd nếu ảnh hưởng dòng dưới thì copy định dạng
+tạo ngắt trang clip 2 lần vào trên và dưới
