@@ -6,6 +6,7 @@ staged			nội dung đã được sẵn sàng chuẩn để commit lưu vào bas
 branch			ở nhánh nào thu mục làm việc với tất cả các file trên nhánh đó
 
 **thao tác
+cd ./ten_/		mở thư mục tên
 yum install git -y	cài git
 cd đường_dẫn		mở tập tin
 ls      xem các mục bên trong
@@ -51,16 +52,28 @@ git mergetool             sửa đổi sung đột nhánh khi gộp
 pwd             hiện thư mục git
    
 *********5
-git push			vừa fetch vừa merge nhánh
+git push			up dữ liệu từ local lên remote
 git push --all             up tất cả nhánh từ local lên remote do git push -u đánh dấu mặc định tên remote
-git push tên_remote  tên_nhánh(--all)           up dữ liệu tên_nhánh từ local lên remote hay up tất cả nhánh
+&git push tên_remote  tên_nhánh(--all)           up dữ liệu tên_nhánh từ local lên remote hay up tất cả nhánh
 git push -u    tên_remote   tên_nhánh           đánh dấu đường dẫn lần sau chỉ cần git push tự up lên
 git push --delete tên_remote  tên nhánh        xóa nhánh trên remote
 git clone            tải thư mục kho chứa trên remote
 git remote add tên(ký_hiệu) địa_chỉ_liên_kết        đặt tên đường dẫn cho local truy cập vào remote
 git remote rm tên        xóa remote tên đường dẫn
 git remote -v       kiểm tra địa chỉ của remote
-git fetch tên_remote        cập nhật mới thông tin trên remote
-git pull tên_remote tên_nhánh        cập nhật tên_nhánh từ remote về local
+git fetch tên_remote        kiểm tra xem có sự thay đổi giữa remote và local chưa thay đổi ngay
+&git pull tên_remote tên_nhánh        lấy dữ liệu tên_nhánh từ remote về local thay đổi luôn
+										git fetch +git merge
 
-
+***không lưu file
+vào noted ghi tên các tập tin, file ngăn cách dấu xuống dòng giữa các file sao đó ra lưu .gitignore
+git branch --all		 kiểm tra các nhánh của remote và local
+git log --oneline ten_remote/branch_remote			kiểm tra lịch sử commit
+git fetch remote branch_remote					cập nhật dữ liệu từ remote nhưng chưa thay đổi màn hình làm việc
+												mục đích sử dụng với git status so sánh
+git pull									vừa cập nhật dữ liệu từ remote về và gộp với thư mục hiện hành
+git pull remote ten_nhanh_remote --allow-unrelated-histories
+git merge ten_nhanh							gộp nhánh ten_nhanh với nhánh đang chọn
+git push remote ten_nhanh_local							up dữ liệu từ local lên remote
+git remote add ten dia_chi					thêm remote
+git remote -v								kiểm tra đường dẫn
