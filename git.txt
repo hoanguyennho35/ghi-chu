@@ -1,0 +1,18 @@
+﻿**chú thích
+untracked		git chua theo dõi
+unmodified		không có b?t k? s? thay d?i nào so v?i l?n commit cu?i
+modifide		n?i dung có s? thay d?i so v?i l?n commit cu?i
+staged			n?i dung dã du?c s?n sàng ch? d? commit luu vào base d? li?u
+branch			? nhánh nào thu m?c làm vi?c v?i t?t c? các file trên nhánh dó
+
+
+**dòng l?nh
+git init		kh?i t?o kho git d? s? d?ng các l?nh c?a git
+git status		ki?m tra tr?ng thái thu m?c làm vi?c git
+git add .		dua vào staged chu?n b? commit
+git commit -m "ghi_chú"	dua vào commit
+git log 		ki?m tra chi ti?t các commit
+git log --oneline	ki?m tra ng?n g?n các commit
+git restore (name or .)	ph?c h?i các file b? xóa t? commit cu?i
+git diff		so sánh file thu m?c làm vi?c và commit cu?i
+git reset --soft	xóa commit end nhung n?i dung du?c chuy?n staged
