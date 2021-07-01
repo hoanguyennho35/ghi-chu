@@ -43,7 +43,7 @@ git branch   kiểm tra xem có bao nhiêu nhánh branch
 git branch tên_nhánh       tạo nhánh mới
 git checkout tên_nhánh      chuyển sang nhánh tên_nhánh
 git switch tên_nhánh        ""
-git merge tên_nhánh         gộp nhánh hiện tại với tên_nhánh (nhánh hiện tại là commit cuối để tránh xung đột)
+git merge tên_nhánh         gộp nhánh hiện tại với tên_nhánh (nhánh hiện tại là commit cuối để tránh xung đột) (20:00 (04))
 &git branch -d tên_nhánh      xóa nhánh tên_nhánh
 git merge --abort           trả các nhành về hiện trạng trước khi gộp bị xung đột
 git log --oneline --graph   vẽ sơ đồ phân nhánh
