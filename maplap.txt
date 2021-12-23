@@ -1,4 +1,4 @@
-clc 				xóa màn hình
+﻿clc 				xóa màn hình
 clear				xóa bộ nhớ
 clf				xóa đồ thị
 4\5				chia ngược 5/4
@@ -56,7 +56,8 @@ exp(3)				e mũ 3
 inf				vô cùng
 size(a)				trả về kích thước hàng, cột
 max(a)				so sánh các cột lấy max trả về ma trận hàng
-
+dot(a,b)			tính tích vô hướng của 2 vector
+cross(a,b)			tích có hướng của 2 vector
 
 ***số phức
 real(z)				phần thực
