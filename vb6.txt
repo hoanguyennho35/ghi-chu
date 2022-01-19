@@ -7,3 +7,14 @@ end if
 dim ten_bien as interger 			khai báo
 shape.fillColor= RGB(255,0,0)			đổi màu sắc
 a=4					có thể phép gán hoặc phép so sánh a có bằng 4
+fix()					làm tròn lấy phần nguyên
+round()					làm tròn lấy theo sau dấu phẩy
+val(str)					chuyển đổi chữ thành số
+cstr(num)					chuyển đổi số thành chữ
+sub thu_tuc(a as interger).....end sub		tạo thủ thục
+
+function ham()				tạo hàm
+ham=kq
+end function
+
+form.load()				khoi dong chuong trinh	

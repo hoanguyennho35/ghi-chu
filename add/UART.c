@@ -1,10 +1,29 @@
 #include "io430.h"
 /////////////////////////////////////////////////////////////////////////////////////////////////////
+void setup_clock(){
+BCSCTL1 = CALBC1_1MHZ; //chon tan so dao dong noi là 1Mhz
+DCOCTL = CALDCO_1MHZ; //chon tan so dao dong noi là 1Mhz
+}
+
+void setup_ADC(){
+ADC10CTL0 = SREF_1 + ADC10SHT_2 + REFON +ADC10ON + ADC10IE;
+__delay_cycles(10000);
+ADC10CTL1 = INCH_7; //chon kenh ngo vao la kenh A7
+ADC10AE0 = 0x80; //P1.7 option selectUART_Init();
+}12:48 CH 01/07/2021
+
+int value_ADC(){
+ADC10CTL0 |= ENC + ADC10SC; //cho phép va bat dau chuyen doi
+  __delay_cycles(30);
+return ADC10MEM;
+}
+
 void setup_UART(void){                    
 	// 1. Set UCSWRST and source clocks
 	UCA0CTL1 |= UCSWRST + UCSSEL_2;      // USCI logic held in reset state + SMCLK
 	// 2. Initializing all USCI registers with UCSWRST = 1
 	// DEFAULT: parity disabled - LSB - 8bit data - one stop bit - UART mode - Asynchoronous mode (page 434)
+	UCA0CLT0 =0;
 	UCA0BR0 = 104;                        // 9600 Baud with 1MHz clock (Refer- 
 	UCA0BR1 = 0;                          // 9600 Baud with 1MHz clock -Pg.15-22)
 	UCA0MCTL = UCBRS_1 + UCBRF_0;  
@@ -38,4 +57,25 @@ void UART_readBytes(char *str){
               str++;}				
         *++str = '\0';}   
 
+void UART_Write_Int(unsigned long n){
+        unsigned char buffer[16];
+        unsigned char i,j;
+           if(n == 0) {
+	UART_Write('0');
+	return;
+              }
+           for (i = 15; i > 0 && n > 0; i--) {
+      	buffer[i] = (n%10)+'0';
+	n /= 10;
+           }
+           for(j = i+1; j <= 15; j++) {
+	UART_Write(buffer[j]);
+           }
+}
+
+void delayms(int ms)
+{
+  for(int i = 0; i<ms;i++)
+  __delay_cycles(1000);
+}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
