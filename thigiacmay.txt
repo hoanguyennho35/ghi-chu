@@ -1,3 +1,4 @@
+﻿
 ﻿def m_blue(pos):					//lấy giá trị con trượt truyền vào blue
    global blue
    blue=pos
@@ -8,3 +9,10 @@ cv2.destroyallwindows()					//giải phóng bộ nhớ
 
 if cv2.waitkey(10)==ord('q'):
     break						//đợi bấm ký tự quá 10ms thoát
+
+
+img=cv.imread("nhap.jpn)
+img=cv.cvtColor(img,COLOR2GRAY)		//chuyển đổi màu
+cv.imshow("name",img)			//hiển thị
+cv.waitkey()				//đợi khi bấm phím
+
