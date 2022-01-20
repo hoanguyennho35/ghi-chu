@@ -1,0 +1,10 @@
+﻿def m_blue(pos):					//lấy giá trị con trượt truyền vào blue
+   global blue
+   blue=pos
+cv2.namedWindow("image")				//tạo slider trượt
+cv2.createTrackbar("blue","image",0,256,m_blue)
+
+cv2.destroyallwindows()					//giải phóng bộ nhớ
+
+if cv2.waitkey(10)==ord('q'):
+    break						//đợi bấm ký tự quá 10ms thoát
