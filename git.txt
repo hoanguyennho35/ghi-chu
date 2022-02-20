@@ -12,9 +12,9 @@ cd đường_dẫn		mở tập tin
 ls      xem các mục bên trong
 cat tên_file      xem nội dung trong file
 clear			xóa màn hình
-git config --global user.username
-git config --global user.email
-git config --global user.password
+git config --global user.username "hoanguyennho"
+git config --global user.email "abc@gmail"
+git config --global user.password "matkhau"
 git config --list			kiểm tra danh sách
 git config --global --unset user.name   xóa bỏ username
 
