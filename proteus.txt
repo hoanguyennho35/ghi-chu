@@ -1,0 +1,61 @@
+1. Điện trở: res 
+
+2. Biến trở: pot hoặc pot-hg
+
+3. Tụ điện: cap 
+
+4. Tụ hóa: cap-elec hoặc cap-pol
+
+5. Cuộn cảm: inductor
+
+6. Diode: diode hoặc tên diode, ví dụ 1N4007, 1N4148...
+
+7. Cầu diode: bridge
+
+8. LED: led-
+
+9. Led 7 đoạn: 7seg-
+ 
+10. LED ma trận: matrix-
+
+11. Đèn: lamp
+
+12. LCD 16x2 : LM016L
+
+13. Quang trở: ldr
+
+14. Transistor: gõ tên của transistor (ví dụ: 2N2222) hoặc dùng NPN, PNP, ...
+
+15. IC: nhập tên của IC, ví dụ: 555, 7805, 7490, ...
+
+16. Loa: Speaker hoặc Sounder
+
+17. Công tắc: sw- hoặc switch
+
+18. Nút nhấn: button
+
+19. Bàn phím: keypad-
+
+20. Rơ-le: relay
+ 
+21. Các cổng logic: gõ tên cổng cần tìm, ví dụ AND, OR, NOT...
+
+22. Thạch anh: crystal
+
+23. Đồng hồ đếm giờ : 7SEG-MPX2-
+
+24. Điện trở thanh : RESPACK-
+
+25. Biến áp: tran-
+
+26. Nguồn AC: vsin
+
+27. Nguồn DC: battery hoặc cell
+
+28. Jack cắm 1 hàng các loại : conn-sil
+
+29. Jack cắm 2 hàng các loại : conn-dil
+
+30. Công cụ lật trạng thái 0/1: Logic toggle
+
+31. Công cụ đo mức logic: logic probe (big)
