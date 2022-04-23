@@ -1,3 +1,5 @@
+2. Vga: Compim
+
 1. Điện trở: res 
 
 2. Biến trở: pot hoặc pot-hg
@@ -59,3 +61,5 @@
 30. Công cụ lật trạng thái 0/1: Logic toggle
 
 31. Công cụ đo mức logic: logic probe (big)
+
+duble click phải xóa linh kiện

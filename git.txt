@@ -4,6 +4,7 @@ unmodified		không có bất kỳ sự thay đổi nào so với lần commit cu
 modifide		nội dung có sự thay đổi so với lần commit cuối
 staged			nội dung đã được sẵn sàng chuẩn để commit lưu vào base dữ liệu
 branch			ở nhánh nào thu mục làm việc với tất cả các file trên nhánh đó
+code .		mở visual studio code
 
 **thao tác
 cd ./ten_/		mở thư mục tên
@@ -23,17 +24,19 @@ git config --global --unset user.name   xóa bỏ username
 &git status		kiểm tra trạng thái thư mục làm việc git
 &git add .		đưa vào staged chuẩn bị commit
 &git commit -m "ghi_chú"	dua vào commit
+$git commit --amend -m "tenmoi"    update các file vào commit cuoi và đổi tên
 &git log 		kiểm tra chi tiết các commit
 git diff   nếu staged k có dữ liệu so sánh thư mục làm việc và commit cuối
 		nếu staged có dữ liệu so sánh thư mục làm việc và staged
 git diff --staged  so sánh giữa staged và commit cuối "dài quá nhấn q để thoát"
+git diff   mã_cm1   mã_cm2	so sánh nội dung cm1 với cm2
 &git log --oneline  hiện các commit vắn tắt
 git log --oneline origan/master 	kiểm tra commit trên origan nhánh master
-git checkout mã --tên   khôi phục file tên về mã đưa vào staged
-touch .gitignore		mở và để loại trừ k theo dõi (*.img   cached)
-git restore (name or .)	phục hồi các file bị xóa từ commit cuối
-git restore --staged tên    loại bỏ file tên ra staged
-$git commit --amend -m ten    update lai commit cuoi
+git checkout mã --tênfile   bắt buộc đưa ra staged khôi phục file tên ở thư thư mục làm việc về như file ở thời điểm như mã
+git checkout --tênfile	       bắt buộc đưa ra staged khôi phục file tên ở thư mục làm việcvề như file ở commit cuối
+tạo file .gitignore		mở và để loại trừ k theo dõi (*.img   cached    build/release)
+git restore (name or .)	đang ở modifire phục hồi các file về như commit cuối còn những file chưa theo doi vẫn giữ lại
+git restore --staged tên    bỏ file tên ở staged ra modifire
 git reset --hard HEAD~1   xóa commit cuối cùng nội dung trả về cho commit trước k lưu dữ liệu
 git reset --soft HEAD~1  xóa commit cuối nhưng nội dung trong commit cuối đưa vào staged có lưu dữ liệu
 git restore . khôi phục các file về trạng thái như ở commit cuối cùng

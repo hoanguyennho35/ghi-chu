@@ -1,0 +1,1 @@
+int a = Interger.parseInt("1")	//chuyển dữ liệu chữ thành số

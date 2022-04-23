@@ -1,0 +1,2 @@
+arduino
+serial.available() mỗi lần nhận được dữ liệu là nó lại thoát rồi quay lại nhận tiếp
